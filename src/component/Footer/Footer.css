@@ -1,0 +1,159 @@
+.footer {
+  background-color: #FEFEFE;
+  color: #147019;
+  padding: 40px 20px;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.footer-top {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+}
+
+.footer-top-left img {
+  width: 80px;
+}
+
+.footer-title {
+  font-size: 18px;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.footer-email-form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.footer-input-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-input-group img {
+  width: 20px;
+  margin-bottom: 5px;
+}
+
+input[type="email"],
+textarea {
+  padding: 10px;
+  border: 1px solid #B51225;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+.footer-subscribe {
+  background-color: #147019;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  align-self: flex-start;
+}
+
+.footer-bottom {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+  font-size: 14px;
+}
+
+.footer-partners {
+  margin-top: 30px;
+}
+
+.footer-partners h4 {
+  color: #B51225;
+  margin-bottom: 15px;
+}
+
+.partner-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.nysc-card img {
+  width: 100px;
+  height: auto;
+  border: 2px solid #147019;
+  border-radius: 8px;
+  padding: 5px;
+  background-color: #FEFEFE;
+}
+@media (max-width: 768px) {
+  .footer {
+    padding: 30px 15px;
+  }
+
+  .footer-top {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+  }
+
+  .footer-top-left {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .footer-top-left img {
+    width: 60px;
+  }
+
+  .footer-title {
+    font-size: 16px;
+    margin-top: 8px;
+  }
+
+  .footer-email-form {
+    width: 100%;
+  }
+
+  .footer-input-group label {
+    font-size: 14px;
+  }
+
+  input[type="email"],
+  textarea {
+    font-size: 13px;
+    padding: 8px;
+  }
+
+  .footer-subscribe {
+    font-size: 14px;
+    padding: 8px 16px;
+  }
+
+  .footer-bottom {
+    flex-direction: column;
+    gap: 10px;
+    font-size: 13px;
+    margin-top: 30px;
+  }
+
+  .footer-bottom-left,
+  .footer-bottom-right {
+    text-align: left;
+  }
+
+  .footer-partners h4 {
+    font-size: 16px;
+  }
+
+  .partner-list {
+    justify-content: center;
+    gap: 10px;
+  }
+
+  .nysc-card img {
+    width: 80px;
+    padding: 4px;
+  }
+}

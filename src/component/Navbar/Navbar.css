@@ -1,0 +1,137 @@
+/* Navbar container */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fefefe;
+  padding: 20px 40px;
+  border-bottom: 3px solid #147019;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+/* NYSC logo */
+.navbar-logo {
+  width: 60px;
+  height: auto;
+  border-radius: 50%;
+  border: 2px solid #147019;
+}
+
+/* Menu list */
+.navbar-menu {
+  display: flex;
+  list-style: none;
+  gap: 30px;
+  margin: 0;
+  padding: 0;
+}
+
+/* Menu items */
+.navbar-menu li {
+  position: relative;
+  cursor: pointer;
+  font-weight: 600;
+  color: #147019;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  transition: color 0.3s ease;
+}
+
+/* Hover effect */
+.navbar-menu li:hover p {
+  color: #B51225;
+}
+
+/* Underline for active item */
+.navbar-menu li img {
+  position: absolute;
+  bottom: -6px;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  transition: width 0.3s ease;
+}
+
+/* NYSC Connect Button */
+.nysc-connect-btn {
+  padding: 12px 24px;
+  border-radius: 25px;
+  background: linear-gradient(135deg, #147019 0%, #fefefe 50%, #B51225 100%);
+  color: #147019;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-decoration: none;
+  border: 2px solid #147019;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+/* Hover effect for button */
+.nysc-connect-btn:hover {
+  background: linear-gradient(135deg, #147019 0%, #fefefe 50%, #B51225 100%);
+  color: #fefefe;
+  border-color: #B51225;
+  box-shadow: 0 6px 14px rgba(181, 18, 37, 0.3);
+}
+
+/* Hide menu icons on desktop */
+.navbar-open,
+.navbar-close {
+  display: none;
+}
+
+/* Responsive styles for smaller screens */
+@media (max-width: 768px) {
+  .navbar {
+    margin: 20px 50px;
+  }
+
+  .nysc-connect-btn {
+    display: none;
+  }
+
+  .navbar-open {
+    display: block;
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    width: 30px;
+    height: auto;
+    z-index: 4;
+    cursor: pointer;
+  }
+
+  .navbar-close {
+    display: block;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    width: 30px;
+    height: auto;
+    z-index: 4;
+    cursor: pointer;
+  }
+
+  .navbar-menu {
+    position: fixed;
+    flex-direction: column;
+    align-items: flex-start;
+    top: 0;
+    right: -350px;
+    gap: 30px;
+    background-color: #1F0016;
+    width: 350px;
+    height: 100%;
+    z-index: 3;
+    transition: right 0.5s ease;
+    padding-top: 60px;
+  }
+
+  .navbar-menu li {
+    font-size: 24px;
+    padding-left: 40px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+}

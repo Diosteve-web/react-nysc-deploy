@@ -1,0 +1,98 @@
+/* General Layout */
+.videos, .video-section, .facebook-video-section {
+  margin: 40px auto;
+  padding: 20px;
+  max-width: 800px;
+  background-color: #f4fdf4;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 128, 0, 0.1);
+  font-family: 'Segoe UI', sans-serif;
+}
+
+/* Titles */
+.videos-title h1,
+.video-title,
+.facebook-video-title {
+  color: #006400;
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+/* Descriptions */
+.video-description,
+.facebook-video-description {
+  font-size: 16px;
+  line-height: 1.6;
+  color: #333;
+  text-align: justify;
+  margin-bottom: 20px;
+}
+
+/* Buttons */
+.video-button {
+  background-color: #228B22;
+  color: white;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  display: block;
+  margin: 0 auto;
+}
+
+.video-button:hover {
+  background-color: #006400;
+}
+
+/* Facebook Video Embeds */
+.fb-video {
+  margin: 20px auto;
+  text-align: center;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .videos, .video-section, .facebook-video-section {
+    padding: 15px;
+  }
+
+  .videos-title h1,
+  .video-title,
+  .facebook-video-title {
+    font-size: 22px;
+  }
+
+  .video-description,
+  .facebook-video-description {
+    font-size: 14px;
+  }
+
+  .video-button {
+    font-size: 14px;
+    padding: 10px 20px;
+  }
+}
+
+.nysc-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(135deg, #006400, #32CD32); /* NYSC green tones */
+  padding: 40px;
+  border-radius: 9px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  color: #fff;
+  text-align: center;
+}
+
+.nysc-container:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 100, 0, 0.4);
+  background: linear-gradient(135deg, #228B22, #7CFC00); /* Brighter green on hover */
+}
