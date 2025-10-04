@@ -1,5 +1,5 @@
 import React from 'react';
-import './about.css';
+import './About.css';
 //import themePattern from '../../assets/theme_pattern.png';
 import Agbor from '../../assets/nysc.jpeg';
 import event1 from '../../assets/background.jpeg';
